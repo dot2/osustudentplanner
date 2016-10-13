@@ -1,0 +1,54 @@
+// variables
+$main-color: #272727
+$sec-color: #fff
+$accent-color: #F15E11
+$shadow: rgba($main-color, 0.5)
+// end
+
+html,body
+  margin: 0
+  padding: 0
+  font-size: 16px
+h1,h2,h3,h4
+  margin: 0
+  padding: 0
+
+.planner-header
+  background-color: $main-color
+  position: relative
+  width: 100%
+  display: flex
+  padding: .8em
+  flex-direction: row
+  .header-text
+    margin-left: 7em
+    h1
+      text-align: left
+      color: $sec-color
+    h2
+      color: rgb(194, 194, 194)
+  .logo
+    position: absolute
+    top: 0
+    left: 2em
+    background:
+      repeat: no-repeat
+      position: center
+      size: contain
+      image: url('http://go.okstate.edu/sites/go.okstate.edu/themes/responsive_osu_main_page/images/logo-banner.png')
+    width: 110px
+    height: 140px
+    font: 0/0 a
+
+.course-wrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 100%
+  margin-top: 4em
+  .course-container
+    box-shadow: 0px 0px 10px $shadow
+    width: 100%
+    max-width: 800px
+    height: 300px
