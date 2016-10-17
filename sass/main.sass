@@ -3,6 +3,8 @@ $main-color: #272727
 $sec-color: #fff
 $accent-color: #F15E11
 $shadow: rgba($main-color, 0.5)
+$font-main: 'Roboto', sans-serif
+$font-sec: 'Open Sans', sans-serif
 // end
 
 html,body
@@ -20,13 +22,16 @@ h1,h2,h3,h4
   display: flex
   padding: .8em
   flex-direction: row
+  box-shadow: 0 2px 10px $shadow
   .header-text
     margin-left: 7em
     h1
+      font-family: $font-main
       text-align: left
       color: $sec-color
     h2
-      color: rgb(194, 194, 194)
+      font-family: $font-sec
+      color: rgb(231, 231, 231)
   .logo
     position: absolute
     top: 0
@@ -42,13 +47,39 @@ h1,h2,h3,h4
 
 .course-wrapper
   display: flex
-  flex-direction: column
   align-items: center
   justify-content: center
   width: 100%
   margin-top: 4em
   .course-container
-    box-shadow: 0px 0px 10px $shadow
+    box-shadow: 0px 0px 2px $shadow
+    border-radius: 2px
     width: 100%
     max-width: 800px
     height: 300px
+    padding: .5em 1em
+    h2
+      text-align: center
+      font:
+        family: $font-main
+        size: 1.4rem
+        weight: bold
+    ul
+      text-align: center
+      list-style: none
+      margin: 0
+      li
+        font:
+          family: $font-sec
+          size: 1rem
+.table-container
+  margin-top: 2em
+
+  .dropdown-container
+    label
+      font:
+        family: $font-main
+        weight: bold
+        size: 1.2rem
+    select:focus
+      outline: none !important

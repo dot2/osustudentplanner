@@ -7,6 +7,8 @@
     <title>OSU Student Planner</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/main.css">
+    <!-- Google font cdn link -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:400,700" rel="stylesheet">
   </head>
   <body>
     <!-- start of the header -->
@@ -20,17 +22,86 @@
     <!-- start of the body -->
     <div class="row">
       <div class="course-wrapper">
-        <div class="course-container">
-          course menus
+        <!-- dropdown container -->
+        <div class="small-8 columns">
+          <div class="course-container">
+            <div class="dropdown-container">
+              <label>Select Category
+                <select>
+                  <option value="husker">MSIS</option>
+                  <option value="starbuck">MKTG</option>
+                  <option value="hotdog">MATH</option>
+                  <option value="apollo">CS</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="dropdown-container">
+              <label>Select Course
+                <select>
+                  <option value="husker">3333</option>
+                  <option value="starbuck">4003</option>
+                  <option value="hotdog">4253</option>
+                  <option value="apollo">4523</option>
+                </select>
+              </label>
+            </div>
+
+          </div>
+        </div>
+        <!-- class display list -->
+        <div class="small-4 columns">
+          <div class="course-container">
+            <h2>Selected classes</h2>
+            <ul>
+              <li class="selectedClasses">MSIS 4003</li>
+              <li class="selectedClasses">MSIS 4003</li>
+              <li class="selectedClasses">MSIS 4003</li>
+              <li class="selectedClasses">MSIS 4003</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome the OSU Student Planner</h1>
+    <!-- display the list of data in a table based on options from above -->
+    <div class="row">
+      <div class="table-container">
+        <table class="hover">
+          <thead>
+            <tr>
+              <th width="200">Table Header</th>
+              <th>Table Header</th>
+              <th width="150">Table Header</th>
+              <th width="150">Table Header</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Content Goes Here</td>
+              <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+              <td>Content Goes Here</td>
+              <td>Content Goes Here</td>
+            </tr>
+            <tr>
+              <td>Content Goes Here</td>
+              <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+              <td>Content Goes Here</td>
+              <td>Content Goes Here</td>
+            </tr>
+            <tr>
+              <td>Content Goes Here</td>
+              <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+              <td>Content Goes Here</td>
+              <td>Content Goes Here</td>
+            </tr>
+          </tbody>
+        </table>
+
       </div>
-    </div> -->
+
+    </div>
+
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
