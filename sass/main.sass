@@ -46,12 +46,10 @@ h1,h2,h3,h4
     font: 0/0 a
 
 .course-wrapper
-  display: flex
-  align-items: center
-  justify-content: center
-  width: 100%
-  margin-top: 4em
+  margin-top: 3em
+
   .course-container
+    margin-top: 1em
     box-shadow: 0px 0px 2px $shadow
     border-radius: 2px
     width: 100%
@@ -64,15 +62,16 @@ h1,h2,h3,h4
       font:
         family: $font-main
         size: 1.4rem
-        weight: bold
     ul
       text-align: center
       list-style: none
       margin: 0
       li
+        margin-top: .8em
+        line-height: 2rem
         font:
           family: $font-sec
-          size: 1rem
+          size: 1.2rem
     button
       position: absolute
       right: 1em
@@ -81,10 +80,18 @@ h1,h2,h3,h4
   background-color: $accent-color
   border-radius: 2px
   box-shadow: 0 0 2px $shadow
+  transition: all 0.3s ease
   &:hover
-    background-color: $main-color !important
+    background-color: darken($accent-color, 3%) !important
+    box-shadow: 0 10px 10px -5px $shadow
+    transform: translate(0, -2%)
 .table-container
   margin-top: 2em
+  h2
+    padding: .5em .2em
+    font:
+      family: $font-main
+      size: 1.8rem
 
   .dropdown-container
     label

@@ -23,10 +23,10 @@
     <div class="row">
       <div class="course-wrapper">
         <!-- dropdown container -->
-        <div class="small-8 columns">
+        <div class="medium-4 columns">
           <div class="course-container">
             <div class="dropdown-container">
-              <label>Select Category
+              <label>Class Category
                 <select>
                   <option value="husker">MSIS</option>
                   <option value="starbuck">MKTG</option>
@@ -37,7 +37,7 @@
             </div>
 
             <div class="dropdown-container">
-              <label>Select Course
+              <label>Course Number
                 <select>
                   <option value="husker">3333</option>
                   <option value="starbuck">4003</option>
@@ -50,15 +50,29 @@
           </div>
         </div>
         <!-- class display list -->
-        <div class="small-4 columns">
+        <div class="medium-8 columns">
           <div class="course-container">
             <h2>Selected classes</h2>
-            <ul>
-              <li class="selectedClasses">MSIS 4003</li>
-              <li class="selectedClasses">MSIS 4003</li>
-              <li class="selectedClasses">MSIS 4003</li>
-              <li class="selectedClasses">MSIS 4003</li>
-            </ul>
+            <div class="selected-classes">
+                <table>
+                    <thead>
+                      <tr>
+                        <th width="100">Class</th>
+                        <th width="100">Day</th>
+                        <th width="100">Time</th>
+                        <th width="100">CRN</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>MSIS 4003</td>
+                          <td>MW</td>
+                          <td>3:30pm</td>
+                          <td>1234</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
           </div>
         </div>
       </div>
@@ -68,6 +82,7 @@
     <div class="row">
       <div class="course-wrapper">
         <div class="table-container">
+        <h2>Available Classes</h2>
           <table class="hover">
             <thead>
               <tr>
